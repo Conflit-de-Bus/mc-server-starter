@@ -1,7 +1,13 @@
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="294567924549-2768u8pgj20cvubfgcolin9hpne18j1b.apps.googleusercontent.com">
-
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<html>
+  <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="294567924549-2768u8pgj20cvubfgcolin9hpne18j1b.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+  </body>
+</html>
 
 <script>
     function onSignIn(googleUser) {
